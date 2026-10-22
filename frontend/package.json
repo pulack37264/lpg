@@ -1,0 +1,14 @@
+{
+  "name": "lpg-frontend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+     "start": "live-server --host=0.0.0.0 --port=3001 --open=./index.html",
+     "dev": "live-server --host=0.0.0.0 --port=3001 --open=./index.html"
+  },
+
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
+

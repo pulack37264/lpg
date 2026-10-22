@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LPG Delivery Company</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="https://img.icons8.com/fluency/48/000000/gas-pump.png" alt="LPG Shop" />
+        <div>
+          <h1>LPG Delivery</h1>
+          <p>Reliable cylinder delivery for homes and businesses</p>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+      </nav>
+      <div class="header-actions">
+        <a href="login.html" class="btn btn-primary">Sign In</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Company</span>
+          <h2>Trusted LPG Delivery for Your Home</h2>
+          <p>We provide fast cylinder delivery, refills, and safety assistance with secure ordering and dedicated support.</p>
+          <div class="hero-actions">
+            <a href="login.html" class="btn btn-primary">Login</a>
+            <a href="#services" class="btn btn-secondary">Our Services</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1546417304-5b8c6256208b?auto=format&fit=crop&w=900&q=80" alt="LPG Delivery" />
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section products-section">
+      <div class="container">
+        <div class="section-title">
+          <span>Services</span>
+          <h2>What We Offer</h2>
+          <p>From LPG cylinders to refill delivery plans, we make safe gas access easy.</p>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <span class="badge">Cylinder</span>
+            <h3>5kg LPG Cylinder</h3>
+            <p>Compact, portable cylinder for small kitchen use and portable stoves.</p>
+          </article>
+          <article class="product-card">
+            <span class="badge">Cylinder</span>
+            <h3>12kg LPG Cylinder</h3>
+            <p>Standard home cylinder for daily cooking and household needs.</p>
+          </article>
+          <article class="product-card">
+            <span class="badge">Service</span>
+            <h3>Refill Delivery</h3>
+            <p>Fast refill service delivered to your door with easy scheduling.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section steps-section">
+      <div class="container">
+        <div class="section-title">
+          <span>About</span>
+          <h2>How LPG Delivery Works</h2>
+          <p>Order online and our certified team will deliver safely, every time.</p>
+        </div>
+        <div class="steps-grid">
+          <article class="step-card">
+            <div class="step-number">1</div>
+            <h3>Choose a Product</h3>
+            <p>Select the right LPG cylinder or refill service for your home.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-number">2</div>
+            <h3>Schedule Delivery</h3>
+            <p>Pick a delivery time and confirm your shipping details.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-number">3</div>
+            <h3>Receive Safely</h3>
+            <p>Our team delivers with safe handling and customer support.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-grid">
+        <div>
+          <h2>Need help placing an order?</h2>
+          <p>Contact our customer support or use the form to request assistance with your LPG delivery.</p>
+          <ul class="contact-info">
+            <li><strong>Phone:</strong> +1 (555) 123-4567</li>
+            <li><strong>Email:</strong> support@lpghomedelivery.com</li>
+            <li><strong>Service:</strong> 24/7 delivery within the city</li>
+          </ul>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="4" placeholder="How can we help?" required></textarea>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', (event) => {
+      event.preventDefault();
+      alert('Thank you! We received your message and will contact you shortly.');
+      contactForm.reset();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LPG Delivery - Customer Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="https://img.icons8.com/fluency/48/000000/gas-pump.png" alt="LPG Shop" />
+        <div>
+          <h1>Customer Dashboard</h1>
+          <p>Browse products and place an LPG order</p>
+        </div>
+      </div>
+      <div class="header-actions">
+        <a href="index.html" class="btn btn-secondary">Home</a>
+        <button id="logoutButton" class="btn btn-secondary">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section products-section">
+      <div class="container">
+        <div class="section-title">
+          <span>Customer</span>
+          <h2 id="welcomeMessage">Welcome back</h2>
+          <p>Pick your LPG product, add to cart, and checkout securely.</p>
+        </div>
+        <div id="productGrid" class="product-grid"></div>
+      </div>
+    </section>
+  </main>
+
+  <aside class="cart-panel" id="cartPanel">
+    <div class="cart-header">
+      <h2>Your Cart</h2>
+      <button id="closeCart" class="close-btn">×</button>
+    </div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-summary">
+      <div>
+        <span>Subtotal</span>
+        <strong id="cartTotal">$0.00</strong>
+      </div>
+      <button id="checkoutButton" class="btn btn-primary btn-block">Proceed to Checkout</button>
+    </div>
+  </aside>
+
+  <div class="cart-backdrop" id="cartBackdrop"></div>
+  <button id="cartToggle" class="cart-button">Cart (<span id="cartCount">0</span>)</button>
+
+  <script src="config.js"></script>
+  <script type="module" src="customer.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LPG Delivery - Customer Registration</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <img src="https://img.icons8.com/fluency/48/000000/gas-pump.png" alt="LPG Shop" />
+        <div>
+          <h1>Customer Registration</h1>
+          <p>Create your LPG delivery account</p>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section login-section">
+      <div class="container">
+        <div class="section-title">
+          <span>Register</span>
+          <h2>Create your customer account</h2>
+          <p>Register once and start ordering LPG deliveries right away.</p>
+        </div>
+        <div class="login-card">
+          <form id="registerForm">
+            <label for="name">Full Name</label>
+            <input id="name" type="text" required placeholder="John Doe" />
+
+            <label for="email">Email</label>
+            <input id="email" type="email" required placeholder="customer@example.com" />
+
+            <label for="password">Password</label>
+            <input id="password" type="password" required placeholder="customer123" />
+
+            <label for="address">Address</label>
+            <input id="address" type="text" required placeholder="123 Main Street" />
+
+            <label for="phone">Phone Number</label>
+            <input id="phone" type="tel" required placeholder="0123456789" />
+
+            <button type="submit" class="btn btn-primary">Register</button>
+          </form>
+          <p class="login-status" id="statusMessage"></p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="config.js"></script>
+  <script type="module" src="register.js"></script>
+</body>
+</html>
